@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso Negado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ef4444;
+            --bg-color: #f9fafb;
+            --text-color: #111827;
+            --muted-color: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+            padding: 50px 40px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .container img {
+            width: 280px;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--muted-color);
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #dc2626;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .container img {
+                width: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/595/595067.png" alt="Acesso Negado">
+        <h1>Acesso Negado</h1>
+        <p>Seu acesso ao sistema foi revogado por violar normas de segurança.<br>Se você acredita que isso é um engano,
+            por favor, entre em contato com o suporte.</p>
+        <a href="mailto:hebercinti@hotmail.com.com" class="btn">Entrar em Contato</a>
+    </div>
+</body>
+
+</html>
